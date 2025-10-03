@@ -8,7 +8,7 @@
         font-family: Arial, sans-serif;
         background: #eaeaea;
         margin: 0;
-        padding: 40px;
+        padding: 16px;
     }
 
     .resume-container {
@@ -188,16 +188,84 @@
         color: #666;
     }
 
- .edu-inst,
+    .edu-inst,
     .exp-inst,
     a {
         font-style: italic;
         text-decoration: none;
         color: #8e8989;
     }
-    
+
     .edu-year,
     .exp-year {
         color: #b48d3c;
         font-size: 0.95em;
+    }
+
+
+
+    /* ...existing code... */
+
+    /* Tablet (max-width: 900px) */
+    @media (max-width: 600px) {
+        .resume-container {
+            padding: 30px 16px;
+        }
+
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 18px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+        }
+
+        .main-content {
+            flex-direction: column;
+            margin: 0;
+            gap: 24px;
+        }
+    }
+
+    /* Mobile (max-width: 600px) */
+    @media (max-width: 600px) {
+        body {
+            padding: 10px;
+        }
+
+        .resume-container {
+            padding: 12px 4px;
+            border-radius: 10px;
+        }
+
+        .name {
+            font-size: 2rem;
+            padding-bottom: 12px;
+        }
+
+        .title {
+            font-size: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+        }
+
+        .skills-list {
+            gap: 8px;
+        }
+
+        .skill-icon {
+            width: 60px;
+            height: 20px;
+            font-size: 1rem;
+        }
+
+        .bar-bg {
+            width: 80px;
+            height: 8px;
+        }
     }
